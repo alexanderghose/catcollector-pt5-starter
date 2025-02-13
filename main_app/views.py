@@ -19,6 +19,7 @@ def cat_index(request):
 def cat_detail(request, cat_id):
   cat = Cat.objects.get(id=cat_id)
   feeding_form = FeedingForm()
+  # feedings = cat.feeding_set.all()
   print(cat)
   return render(request, 'cats/detail.html', { 'cat': cat, 'feeding_form': feeding_form })
 

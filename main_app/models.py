@@ -30,6 +30,9 @@ class Feeding(models.Model):
     meal = models.CharField(max_length=1, choices=MEALS, default='B')
     cat = models.ForeignKey(Cat, on_delete=models.CASCADE)
 
-
     def __str__(self):
         return f"{self.get_meal_display()} on {self.date}"
+
+    # Define the default order of feedings
+    class Meta:
+        ordering = ['-date']  # This line makes the newest feedings appear first
