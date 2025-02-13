@@ -1,12 +1,12 @@
-# class-based views starter code
+# one-to-many starter code
 
 how to use this starter code:
 
-1. git clone https://github.com/alexanderghose/catcollector-pt4-starter.git
-2. cd catcollector-pt4-starter
+1. git clone https://github.com/alexanderghose/catcollector-pt5-starter.git
+2. cd catcollector-pt5-starter
 3. pipenv shell
 4. pipenv install
-6. python3 manage.py runserver         # or whatever your python command is
+6. python3 manage.py runserver         # or whatever your python command is, eg., python3.10 manage.py runserver
 
 <hr>
 
